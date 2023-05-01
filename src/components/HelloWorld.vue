@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <p>
       CDC .....working?
+    </p>
   </div>
 </template>
 
