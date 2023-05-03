@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkcdc"]=self["webpackChunkcdc"]||[]).push([[443],{9945:function(n,t,u){u.r(t),u.d(t,{default:function(){return o}});var c=u(3396);const e={class:"about"},r=(0,c._)("h1",null,"This is site built with vue for CDC",-1),s=[r];function i(n,t){return(0,c.wg)(),(0,c.iD)("div",e,s)}var a=u(89);const f={},l=(0,a.Z)(f,[["render",i]]);var o=l}}]);
-//# sourceMappingURL=about.574f1e12.js.map
