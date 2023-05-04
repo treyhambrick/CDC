@@ -1,73 +1,68 @@
 <template>
-  <div class="picker">
-    <CENTER>
-    <h1>Pick your dates</h1>
-     <NOBR>From: <VueDatePicker mode="date" v-model="fromdate" /></NOBR><BR/>
-     To:<VueDatePicker mode="date" v-model="todate" />
-     <!---P>
-      Date: {{  date.toJSON() }}
-     </P--->
-    </CENTER>
-  </div>
+
+    <div class="picker">
+      
+        <h1>Pick your dates</h1>
+        <VueDatePicker v-model="date"  range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
+        
+        <!---VueDatePicker v-model="date" no-seconds-overlay enable-seconds /--->
+        <!---From: <VueDatePicker mode="date" v-model="fromdate" /><BR/>
+        To:<VueDatePicker mode="date" v-model="todate" />
+        P>
+          Date: {{  date.toJSON() }}
+        </P--->
+        <BR/>
+        Email:  
+        <input type="text" v-model="email"> 
+        <BR/><BR/>
+        <button type="submit" @click="submit">
+             Submit Reservation Request
+        </button>
+    
+    </div>
+
 </template>
 
-<script>
-import VueDatePicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css'
-//const fromdate = ref(new Date())
-//const todate = ref(new Date())
+<script setup>
+import { ref, onMounted } from 'vue';
 
-export default {
-  components: { VueDatePicker },
-  data() {
-    return {
-      fromdate: null,
-      todate: null,
-    };
-  }
-}
+const date = ref();
+
+// For demo purposes assign range from the current date
+onMounted(() => {
+const startDate = new Date();
+const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
+date.value = [startDate, endDate];
+})
 </script>
 
 
 <style>
+
   .picker {
-    margin-left: auto;
-    margin-right: auto;
+    xxmargin-left: 25%;
+    xxmargin-right: 25%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-gap: 1rem;
-    max-width: 80rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    xxbackground: yellow;
+    place-items: center;
+    xxgrid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: .4rem;
+    xxmax-width: 88rem;
+    margin: 0rem auto;
+    padding: 0 36rem;
   }
+  div.pickerxx {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
 
 </style>
 
 
-
-<!---script setup>
-//import Datepicker from 'vue3-datepicker'
-//import Vue from 'vue';
-//import { DatePicker } from 'v-calendar';
-//import { ref } from 'vue'
-//import 'v-calendar/dist/style.css';
-
-import { ref } from 'vue'
-import Datepicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css'
-
-const fromdate = ref(new Date())
-const todate = ref(new Date())
-
-export default {
-  components: { Datepicker },
-  data() {
-    return {
-      date: null,
-    };
-  }
-}
-</script--->
 
 
 

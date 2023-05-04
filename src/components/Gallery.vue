@@ -50,7 +50,7 @@ export default {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: 1rem;
     max-width: 80rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0 1rem;
   }
 
