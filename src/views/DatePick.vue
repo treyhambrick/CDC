@@ -12,9 +12,9 @@
           Date: {{  date.toJSON() }}
         </P--->
         <BR/>
-        Email:  
+        Your email:  
         <input type="text" v-model="email"> 
-        <BR/><BR/>
+        <BR/>
         <button type="submit" @click="submit">
              Submit Reservation Request
         </button>
@@ -39,17 +39,17 @@ date.value = [startDate, endDate];
 
 <style>
 
-  .picker {
+  .pickerxxx {
     xxmargin-left: 25%;
     xxmargin-right: 25%;
     display: grid;
     xxbackground: yellow;
     place-items: center;
     xxgrid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    grid-gap: .4rem;
+    grid-gap: .04rem;
     xxmax-width: 88rem;
     margin: 0rem auto;
-    padding: 0 36rem;
+    padding: 0 44rem;
   }
   div.pickerxx {
     margin: 0;
