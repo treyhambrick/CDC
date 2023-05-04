@@ -1,37 +1,5 @@
 <template>
-
-    <div class="picker">
-      
-        <h1>Pick your dates</h1>
-        <VueDatePicker v-model="date"  range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
-        
-        <!---VueDatePicker v-model="date" no-seconds-overlay enable-seconds /--->
-        <!---From: <VueDatePicker mode="date" v-model="fromdate" /><BR/>
-        To:<VueDatePicker mode="date" v-model="todate" />
-        P>
-          Date: {{  date.toJSON() }}
-        </P--->
-        <BR/>
-        Your email:  
-        <input type="text" v-model="email"> 
-        <BR/>
-        <button type="submit" @click="submit">
-             Submit Reservation Request
-        </button>
-    
-    </div>
-
+  <div class="picker">
+    <h1>This is picker</h1>
+  </div>
 </template>
-
-<script setup>
-import { ref, onMounted } from 'vue';
-
-const date = ref();
-
-// For demo purposes assign range from the current date
-onMounted(() => {
-const startDate = new Date();
-const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
-date.value = [startDate, endDate];
-})
-</script>
