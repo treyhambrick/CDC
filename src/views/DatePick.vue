@@ -35,36 +35,3 @@ const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
 date.value = [startDate, endDate];
 })
 </script>
-
-
-<style>
-
-  .pickerxxx {
-    xxmargin-left: 25%;
-    xxmargin-right: 25%;
-    display: grid;
-    xxbackground: yellow;
-    place-items: center;
-    xxgrid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    grid-gap: .04rem;
-    xxmax-width: 88rem;
-    margin: 0rem auto;
-    padding: 0 44rem;
-  }
-  div.pickerxx {
-    margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
-
-</style>
-
-
-
-
-
-
-
