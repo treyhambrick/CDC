@@ -2,10 +2,10 @@
   <Gallery />
   
   <div v-if="!isMobile()">
-     not mobile device
+      mobile device
   </div>
   <div v-else>
-     yes mobile device
+      mobile device
   </div>
 </template>
 

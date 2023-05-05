@@ -1,8 +1,8 @@
 <template>
-    <div v-if=screenWidth>
-        <div class="pickerMoble">
+    <div v-if=!screenWidth>
+        <div class="picker">
             <P>
-                <h1>Pick your dates (Moble)</h1>
+                <h1>Pick your dates </h1>
                 <VueDatePicker v-model="date" class="pic" range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
                 <BR/>
                 Your email:  
@@ -11,22 +11,26 @@
                 <button type="submit" @click="submit">
                     Submit Reservation Request
                 </button>
+                <BR/><BR/>
+                    PC                
             </P>
         </div>
     </div>
-        <div v-else>
-            <div class="picker">
-                <P>
-                    <h1>Pick your dates (PC)</h1>
-                    <VueDatePicker v-model="date" class="pic" range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
-                    <BR/>
-                    Your email:  
-                    <input type="text" v-model="email"> 
-                    <BR/><BR/>
-                    <button type="submit" @click="submit">
-                        Submit Reservation Request
-                    </button>
-                </P>
+    <div v-else>
+        <div class="pickerMoble">
+            <P>
+                <h1>Pick your dates </h1>
+                <VueDatePicker v-model="date" class="pic" range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
+                <BR/>
+                Your email:  
+                <input type="text" v-model="email"> 
+                <BR/><BR/>
+                <button type="submit" @click="submit">
+                    Submit Reservation Request
+                </button>
+                <BR/><BR/>
+                Moble device
+            </P>
         </div>
     </div>
 
