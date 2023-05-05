@@ -2,7 +2,7 @@
     <div v-if=screenWidth>
         <div class="pickerMoble">
             <P>
-                <h1>Pick your dates</h1>
+                <h1>Pick your dates (Moble)</h1>
                 <VueDatePicker v-model="date" class="pic" range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
                 <BR/>
                 Your email:  
@@ -17,7 +17,7 @@
         <div v-else>
             <div class="picker">
                 <P>
-                    <h1>Pick your dates</h1>
+                    <h1>Pick your dates (PC)</h1>
                     <VueDatePicker v-model="date" class="pic" range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
                     <BR/>
                     Your email:  
@@ -65,7 +65,7 @@ date.value = [startDate, endDate];
   }
 
   .picx {
-    xxwidth: 280px;
+    width: 280px;
   }
 
 </style>
