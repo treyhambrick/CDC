@@ -1,6 +1,6 @@
 <template>
     <div v-if=!screenWidth>
-        <div class="picker">
+        <div class="pickerMoble">
             <P>
                 <h1>Pick your dates </h1>
                 <VueDatePicker v-model="date" class="pic" range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
@@ -33,18 +33,20 @@
             </P>
         </div>
     </div>
+    {{ screenWidth }}
 
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
 const date = ref();
-const screenWidth = ref(screen.width) <= 760
+const screenWidth = ref(screen.width) <= 760;
 //const screenHeight = ref(screen.height)
 // For demo purposes assign range from the current date
 onMounted(() => {
 const startDate = new Date();
 const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
+//screenWidth = ref(screen.width) <= 760;
 date.value = [startDate, endDate];
 })
 </script>

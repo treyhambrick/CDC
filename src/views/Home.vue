@@ -21,14 +21,16 @@ export default {
   components: {
     Gallery,
   },
-  methods: {
-    isMobile() {
-      if (screen.width <= 760) {
-        return true
-      } else {
-        return false
-      }
-    },
-  },
+  methods: {   
+    isMobile() {     
+      if (screen.width <= 760) 
+         {return true} 
+      else 
+         {return false}   
+      }, 
+    }, 
+    created(){ 
+      this.isMobile() 
+    }
 };
 </script>
