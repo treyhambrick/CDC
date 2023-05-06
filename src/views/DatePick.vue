@@ -11,8 +11,7 @@
                 <button type="submit" @click="submit">
                     Submit Reservation Request
                 </button>
-                <BR/><BR/>
-                    PC                
+                                 
             </P>
         </div>
     </div>
@@ -28,12 +27,10 @@
                 <button type="submit" @click="submit">
                     Submit Reservation Request
                 </button>
-                <BR/><BR/>
-                Moble device
+                
             </P>
         </div>
     </div>
-    {{ screenWidth }}
 
 </template>
 
