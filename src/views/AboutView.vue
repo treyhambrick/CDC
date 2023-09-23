@@ -6,7 +6,7 @@
   <li><B>Execution Steps:</B></li> 
   <li>open command prompt</li> 
   <li>cd C:\Users\thambrick\cdc</li> 
-  <li>npm run build or npm run serve</li>
+  <li>npm run build or npm run serve </li>
   <li>Then just run.bat to execute the commands below:</li>
     <li>git init</li>
     <li>git add .</li>
