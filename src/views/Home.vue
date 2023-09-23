@@ -5,15 +5,14 @@
       mobile device
   </div>
   <div v-else>
-      mobile device
+      not mobile device
   </div>
+
 </template>
 
 
 <script>
-// notes: https://travishorn.com/creating-a-photo-gallery-with-vue-css-grid-3e0a3dd25285  isMobile = {{ isMobile() }}
-// cd C:\Users\thambrick\photo-gallery
-// npm run serve
+
 import Gallery from '@/components/Gallery.vue';
 
 export default {
@@ -22,7 +21,7 @@ export default {
     Gallery,
   },
   methods: {   
-    isMobile() {     
+    isMobilex() {     
       if (screen.width <= 760) 
          {return true} 
       else 
@@ -30,7 +29,11 @@ export default {
       }, 
     }, 
     created(){ 
-      this.isMobile() 
+      this.isMobilex() 
+    },
+    setup(){
+      const isMobile = () => screen.width <= 760
+      return {isMobile}
     }
 };
 </script>
