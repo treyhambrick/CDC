@@ -2,7 +2,7 @@
     <div>
         <div class="picker">
             <P ref="p">
-                <h1>Pick your dates </h1>
+                <h1>Pick your dates <FONT color=red>(under construction)</FONT> </h1>
                 <form v-on:submit.prevent="onSubmit" class="form">
                 <VueDatePicker v-model="date"  range format="MM/dd/yyyy" value-format="MM-dd-yyyy"/>
                 <BR/>
