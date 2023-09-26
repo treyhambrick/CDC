@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is site built with vue for CDC</h1>
+    <h1>This is site built with vue.js for Club Del Cielo 14</h1>
 
   <ul>
   <li><B>Execution Steps:</B></li> 
